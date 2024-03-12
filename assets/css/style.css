@@ -12,13 +12,15 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    overflow: hidden;
+    background-color: #edf2f4;
 }
 
 .wrapper{
     position: relative;;
 }
-
+.header-section {
+    background-color: #fff;
+}
 .header{
     display: flex;
     justify-content:center;
@@ -42,12 +44,12 @@ body {
     color: #9B0000;
 }
 
-.header-section{
-    background-color: #fff;
-}
 
 .main-content{
     background-color: #edf2f4;
+    min-height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
 }
 
 .live-text{
@@ -122,11 +124,10 @@ body {
 }
 
 .section1{
-    padding-top: 10px;
-    padding-bottom: 8px;
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 5px;
+    padding-bottom: 8px;
 }
 .section1 .text1{
     font-size: 20px;
@@ -144,21 +145,22 @@ body {
 }
 
 
+.main-content .section-div {
+    border-bottom: 1px solid #D7D7D7;
+    padding: 10px 0px;
+}
+.main-content .section-div .inactive {
+    display: none;
+}
 .section1-main-div{
     display: flex;
     gap: 30px;
-    border-bottom: 1px solid #D7D7D7;
-    padding-bottom: 10px;
 }
-.main-content .section-div:last-child .section1-main-div {
+.main-content .section-div:last-child {
     border-bottom: 0px;
-    padding-bottom: 0px;
 }
 
 @media screen and (max-width:767px){
-    body{
-        overflow: auto;
-    }
     .section1-main-div{
         flex-wrap: wrap;
         justify-content: center;
@@ -246,3 +248,12 @@ body {
     100% { transform: translateY(-10px); }
 }
 
+
+@media screen and (min-height:880px){
+    .main-content .section-div {
+        padding: 30px 0px;
+    }
+    .main-content .section-div .section1 {
+        padding-bottom: 20px;
+    }
+}
