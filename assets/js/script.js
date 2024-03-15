@@ -8,7 +8,7 @@ $(document).on("scroll", function () {
 
 function fadeupOnload(){
   var pageTop = $(document).scrollTop();
-  var pageBottom = pageTop + $(window).height() + 130;
+  var pageBottom = pageTop + $(window).height() + 150;
   var tags = $(".fadein");
 
   for (var i = 0; i < tags.length; i++) {
