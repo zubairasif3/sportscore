@@ -8,7 +8,7 @@ $(document).on("scroll", function () {
 
 function fadeupOnload(){
   var pageTop = $(document).scrollTop();
-  var pageBottom = pageTop + $(window).height() + 100;
+  var pageBottom = pageTop + $(window).height() + 130;
   var tags = $(".fadein");
 
   for (var i = 0; i < tags.length; i++) {
@@ -24,7 +24,7 @@ function fadeupOnload(){
 
 setTimeout(() => {
   fadeupOnload();
-}, 2800);
+}, 3000);
 
 setInterval(() => {
   $(".section-div .data-item1").removeClass("visible");
