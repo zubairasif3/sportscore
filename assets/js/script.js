@@ -1,5 +1,5 @@
 // preloader
-$(".preloader").fadeTo(5000,1).fadeOut(1000);
+$(".preloader").fadeTo(2000,1).fadeOut(1000);
 
 // fade on scroll
 $(document).on("scroll", function () {
@@ -8,7 +8,7 @@ $(document).on("scroll", function () {
 
 function fadeupOnload(){
   var pageTop = $(document).scrollTop();
-  var pageBottom = pageTop + $(window).height();
+  var pageBottom = pageTop + $(window).height() + 100;
   var tags = $(".fadein");
 
   for (var i = 0; i < tags.length; i++) {
@@ -24,7 +24,7 @@ function fadeupOnload(){
 
 setTimeout(() => {
   fadeupOnload();
-}, 6000);
+}, 2800);
 
 setInterval(() => {
   $(".section-div .data-item1").removeClass("visible");
