@@ -27,12 +27,31 @@ setTimeout(() => {
 }, 6000);
 
 setInterval(() => {
-  console.log(123213);
-  $("#fadeOut .section1-main-div").removeClass("visible");
+  $(".section-div .data-item1").removeClass("visible");
   setTimeout(() => {
-    $("#fadeOut .section1-main-div").toggleClass("inactive");
+    $(".section-div .data-item1").toggleClass("inactive");
   }, 1500);
   setTimeout(() => {
-    $("#fadeOut .section1-main-div").addClass("visible");
+    $(".section-div .data-item1").addClass("visible");
   }, 2000);
-}, 10000);
+}, 15000);
+
+setInterval(() => {
+  $(".section-div .data-item2").removeClass("visible");
+  setTimeout(() => {
+    $(".section-div .data-item2").toggleClass("inactive");
+  }, 1500);
+  setTimeout(() => {
+    $(".section-div .data-item2").addClass("visible");
+  }, 2000);
+}, 20000);
+
+setInterval(() => {
+  $(".section-div .data-item3").removeClass("visible");
+  setTimeout(() => {
+    $(".section-div .data-item3").toggleClass("inactive");
+  }, 1500);
+  setTimeout(() => {
+    $(".section-div .data-item3").addClass("visible");
+  }, 2000);
+}, 25000);
